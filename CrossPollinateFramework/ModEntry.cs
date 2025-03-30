@@ -1,5 +1,6 @@
 ﻿using StardewModdingAPI;
 using StardewModdingAPI.Events;
+using StardewValley;
 
 namespace CrossPollinateFramework
 {
@@ -12,7 +13,11 @@ namespace CrossPollinateFramework
 
         private void OnButtonPressed(object? sender, ButtonPressedEventArgs e)
         {
-             
+            if (!Context.IsWorldReady)
+            {
+                return;
+            }
+            this.Monitor.Log($"{Game1.player.name} pressed {e.Button} in {Game1.currentLocation.Name}", LogLevel.Debug);
         }
     }
 }

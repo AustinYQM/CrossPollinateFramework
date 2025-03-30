@@ -1,0 +1,10 @@
+{
+  "Name": "Cross Pollination Framework",
+  "Author": "AustinYQM",
+  "Version": "1.0.0",
+  "Description": "Allows adding new plants that can spawn hybrid plants.",
+  "UniqueID": "austinyqm.CrossPollinationFramework",
+  "EntryDll": "CrossPollinationFramework.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}
